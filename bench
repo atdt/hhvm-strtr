@@ -1,0 +1,7 @@
+#!/usr/bin/env bash
+
+echo -n "HHVM (-vEval.Jit=true -vEval.JitProfileInterpRequests=0):"
+hhvm -vEval.Jit=true -vEval.JitProfileInterpRequests=0 convert.php
+
+echo -n "PHP5:"
+php5 convert.php
